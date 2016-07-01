@@ -23,3 +23,5 @@ Fn0 -> layer1
 Fn2 -> lower light
 Fn3 -> higher light
 Fn4 -> led on/off
+numlock -> inverse
+logo -> null
