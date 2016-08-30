@@ -5,6 +5,6 @@ I have modified the layout into my GH60+numpad. tried to have a 6u space bar, ho
 
 There is still no arrow keys ;)
 
-![](layer1.png)
-![](layer2.png)
-![](layer3.png)
+![](1.png)
+![](2.png)
+![](3.png)
