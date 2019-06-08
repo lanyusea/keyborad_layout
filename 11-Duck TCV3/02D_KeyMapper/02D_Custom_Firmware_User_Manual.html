@@ -1,0 +1,612 @@
+
+
+
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="-1" />
+<meta http-equiv="Content-Type" content="text/html; charset=MS949" />
+<meta name="robots" content="noindex,nofollow" />
+<link rel="stylesheet" type="text/css" href="http://t.static.blog.naver.net/mylog/versioning/LayoutTopCommon-462531.css" />
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?1" />
+<style type="text/css">
+</style>
+<title>02D Custom Firmware 사용자 메뉴얼</title>
+
+
+
+
+<div id="post-view220107724772" class="post-view pcol2 _param(1)">
+							<div style="font-size:9pt; font-family:'2186763_9';" class="view"><p style="font-family: Gulim;"><span style="line-height: 1.5;">※ 02D Custom Firmware는&nbsp;</span><b style="line-height: 1.5;"><span style="color: rgb(255, 0, 0);">라이트세이버, 오리온, 바이퍼/이글, 덕미니</span></b><span style="line-height: 1.5;">&nbsp;기판에만 적용 가능합니다.</span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">키 매핑 방법은&nbsp;</span><b style="line-height: 1.5;"><span style="color: rgb(0, 0, 255);"><a href="http://kbdlab.co.kr/index.php?mid=board_sw&amp;document_srl=370119" target="_blank">링크</a></span></b><span style="line-height: 1.5;">의 글을 참고하시기 바랍니다.</span><br /></p>
+<p style="font-family: Gulim;"><br /></p>
+<p style="font-family: Gulim;">최대한 쉽게 설명하려 노력하였으나, 어렵게 느껴질 수 있는 점 양해 바랍니다.</p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">설명이 잘 이해가 안되거나, 좀 더 쉬운 표현방법이 있다면, 편한 방법으로 알려주시면 감사하겠습니다.</span><br /></p>
+<p style="font-family: Gulim;"><br /></p>
+<table cellspacing="2" width="600" style="font-family: Gulim; border-spacing: 1px; background: rgb(58, 50, 195);"><tbody><tr style="background: rgb(106, 101, 187);"><td><p>&nbsp;<b><span style="color: rgb(255, 255, 255); font-size: 16px;">목차</span></b></p>
+</td></tr></tbody></table><p style="font-family: Gulim;"><b style="line-height: 1.5;"><span style="font-size: 14px; color: rgb(0, 0, 0);">　</span></b><b style="line-height: 1.5;"><span style="font-size: 14px; color: rgb(0, 0, 0);">　</span></b><span style="color: rgb(0, 0, 0);">
+</span><a href="#menu1"><b style="line-height: 1.5;"><span style="font-size: 14px; color: rgb(0, 0, 0);">1. 사용자 레이어 및 펑션키(FN, MFN)</span></b></a></p>
+<span style="color: rgb(0, 0, 0);">
+</span><p style="font-family: Gulim;"><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5;"><span style="color: rgb(0, 0, 0);">　</span><a href="#menu1-1"><span style="color: rgb(0, 0, 0);">1. 사용자 레이어(4 레이어)</span></a></span></p>
+<span style="color: rgb(0, 0, 0);">
+</span><p style="font-family: Gulim;"><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5;"><span style="color: rgb(0, 0, 0);">　</span><a href="#menu1-2"><span style="color: rgb(0, 0, 0);">2. 펑션 레이어(3 레이어)</span></a></span><span style="line-height: 1.5;"><br /></span></p>
+<span style="color: rgb(0, 0, 0);">
+</span><p style="font-family: Gulim;"><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5;"><span style="color: rgb(0, 0, 0);">　</span><a href="#menu1-3"><span style="color: rgb(0, 0, 0);">3. 레이어 인디케이터</span></a></span><span style="line-height: 1.5;"><br /></span></p>
+<span style="color: rgb(0, 0, 0);">
+</span><p style="font-family: Gulim;"><b style="line-height: 1.5;"><span style="font-size: 14px; color: rgb(0, 0, 0);">　</span></b><b style="line-height: 1.5;"><span style="font-size: 14px; color: rgb(0, 0, 0);">　</span></b><a href="#menu2"><b style="line-height: 1.5;"><span style="font-size: 14px; color: rgb(0, 0, 0);">2. 컨트롤 모드(C/M)와 기능 설정 변경</span></b></a></p>
+<span style="color: rgb(0, 0, 0);">
+</span><p style="font-family: Gulim;"><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5;"><a href="#menu2-1"><span style="color: rgb(0, 0, 0);">1. 컨트롤 모드(C/M) 진입</span></a></span></p>
+<span style="color: rgb(0, 0, 0);">
+</span><p style="font-family: Gulim;"><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><a href="#menu2-2"><span style="color: rgb(0, 0, 0);">2. 컨트롤 모드(C/M) 종료</span></a><br /></p>
+<span style="color: rgb(0, 0, 0);">
+</span><p style="font-family: Gulim;"><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><a href="#menu2-3"><span style="color: rgb(0, 0, 0);">3. 기본 초기화 설정 (EEPROM ALL CLEAR)</span></a><br /></p>
+<span style="color: rgb(0, 0, 0);">
+</span><p style="font-family: Gulim;"><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><a href="#menu2-4"><span style="color: rgb(0, 0, 0);">4. 레이어 상태 인디케이터(LED) 표시 방법 변경</span></a><br /></p>
+<span style="color: rgb(0, 0, 0);">
+</span><p style="font-family: Gulim;"><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><a href="#menu2-5"><span style="color: rgb(0, 0, 0);">5. 토글 레이어(Toggle Layer) 변경</span></a><br /></p>
+<span style="color: rgb(0, 0, 0);">
+</span><p style="font-family: Gulim;"><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><a href="#menu2-6"><span style="color: rgb(0, 0, 0);">6.&nbsp;Debounce 설정 변경</span></a><br /></p>
+<span style="color: rgb(0, 0, 0);">
+</span><p style="font-family: Gulim;"><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><a href="#menu2-7"><span style="color: rgb(0, 0, 0);">7.&nbsp;Shift + ESC = ~ 사용하기</span></a><br /></p>
+<span style="color: rgb(0, 0, 0);">
+</span><p style="font-family: Gulim;"><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><a href="#menu2-8"><span style="color: rgb(0, 0, 0);">8. 부트로더 진입</span></a></p>
+<span style="color: rgb(0, 0, 0);">
+</span><p style="font-family: Gulim;"><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><a href="#menu2-9"><span style="color: rgb(0, 0, 0);">9. 키보드에 적용된 펌웨어의 버전 확인</span></a></p>
+<span style="color: rgb(0, 0, 0);">
+</span><div style="font-family: Gulim;"><b style="line-height: 1.5;"><span style="font-size: 14px; color: rgb(0, 0, 0);">　</span></b><b style="line-height: 1.5;"><span style="font-size: 14px; color: rgb(0, 0, 0);">　</span></b><a href="#menu3"><b style="line-height: 1.5;"><span style="font-size: 14px; color: rgb(0, 0, 0);">3. LED 제어 및 효과 변경</span></b></a><br /></div><p style="font-family: Gulim;"><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5;"><a href="#menu3-1"><span style="color: rgb(0, 0, 0);">1. LED 제어 관련 키 설명</span></a></span></p>
+<span style="color: rgb(0, 0, 0);">
+</span><p style="font-family: Gulim;"><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><a href="#menu3-2"><span style="color: rgb(0, 0, 0);">2. LED 컨트롤 모드(LED Ctrl)를 이용한 밝기 조절</span></a></p>
+<span style="color: rgb(0, 0, 0);">
+</span><p style="font-family: Gulim;"><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><a href="#menu3-3"><span style="color: rgb(0, 0, 0);">3. LED 이펙트 효과 설명 및 변경</span></a></p>
+<span style="color: rgb(0, 0, 0);">
+</span><p style="font-family: Gulim;"><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><a href="#menu3-4"><span style="color: rgb(0, 0, 0);">4. 전체 LED 임시 끄기</span></a></p>
+<span style="color: rgb(0, 0, 0);">
+</span><p style="font-family: Gulim;"><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><a href="#menu3-5"><span style="color: rgb(0, 0, 0);">5. 숨쉬기 모드의 키 입력 반응 잠금 (Push Lock)</span></a></p>
+<span style="color: rgb(0, 0, 0);">
+</span><p style="font-family: Gulim;"><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="color: rgb(0, 0, 0);">　</span><span style="font-size: 9pt; line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="font-size: 9pt; line-height: 1.5; color: rgb(0, 0, 0);">　</span><a href="#menu3-6" style="font-size: 9pt; line-height: 1.5;"><span style="color: rgb(0, 0, 0);">6.&nbsp;LED 이펙트 우회 기능 추가 (LED effect bypass)</span></a><span style="font-size: 9pt; line-height: 1.5; color: rgb(0, 0, 0);">&nbsp;</span><span style="font-size: 9pt; line-height: 1.5; color: rgb(255, 0, 0);">[2014.09.30 추가]</span></p>
+<span style="color: rgb(0, 0, 0);">
+</span><p style="font-family: Gulim;"><b style="line-height: 1.5;"><span style="font-size: 14px; color: rgb(0, 0, 0);">　</span></b><b style="line-height: 1.5;"><span style="font-size: 14px; color: rgb(0, 0, 0);">　</span></b><a href="#menu4"><b style="line-height: 1.5;"><span style="font-size: 14px; color: rgb(0, 0, 0);">4. 매크로 기록 및 사용</span></b></a><br /></p>
+<span style="color: rgb(0, 0, 0);">
+</span><p style="font-family: Gulim;"><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><a href="#menu4-1"><span style="color: rgb(0, 0, 0);">1. 매크로 관련 키 설명</span></a></p>
+<span style="color: rgb(0, 0, 0);">
+</span><p style="font-family: Gulim;"><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><a href="#menu4-2"><span style="color: rgb(0, 0, 0);">2. 매크로 기록 (작성)</span></a></p>
+<span style="color: rgb(0, 0, 0);">
+</span><p style="font-family: Gulim;"><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><a href="#menu4-3"><span style="color: rgb(0, 0, 0);">3. 매크로 사용</span></a></p>
+<span style="color: rgb(0, 0, 0);">
+</span><p style="font-family: Gulim;"><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><a href="#menu4-4"><span style="color: rgb(0, 0, 0);">4. 매크로 초기화 (Clear Macro)</span></a></p>
+<span style="color: rgb(0, 0, 0);">
+</span><p style="font-family: Gulim;"><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><a href="#menu4-5"><span style="color: rgb(0, 0, 0);">5. 매크로 딜레이 설정 (Macro Delay)</span></a></p>
+<span style="color: rgb(0, 0, 0);">
+</span><p style="font-family: Gulim;"><b style="line-height: 1.5;"><span style="font-size: 14px; color: rgb(0, 0, 0);">　</span></b><b style="line-height: 1.5;"><span style="font-size: 14px; color: rgb(0, 0, 0);">　</span></b><a href="#menu5"><b style="line-height: 1.5;"><span style="font-size: 14px; color: rgb(0, 0, 0);">5. 키 잠금(Key Lock) 기능</span></b></a><br /></p>
+<span style="color: rgb(0, 0, 0);">
+</span><p style="font-family: Gulim;"><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><a href="#menu5-1"><span style="color: rgb(0, 0, 0);">1. 잠글 키 설정</span></a></p>
+<span style="color: rgb(0, 0, 0);">
+</span><p style="font-family: Gulim;"><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><a href="#menu5-2"><span style="color: rgb(0, 0, 0);">2. 키 잠금 상태 적용/해제</span></a></p>
+<span style="color: rgb(0, 0, 0);">
+</span><p style="font-family: Gulim;"><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><a href="#menu5-3"><span style="color: rgb(0, 0, 0);">3. 잠금 키 초기화</span></a></p>
+<span style="color: rgb(0, 0, 0);">
+</span><p style="font-family: Gulim;"><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><a href="#menu5-4"><span style="color: rgb(0, 0, 0);">4. 키보드 잠금 기능으로 활용</span></a></p>
+<span style="color: rgb(0, 0, 0);">
+</span><p style="font-family: Gulim;"><b style="line-height: 1.5;"><span style="font-size: 14px; color: rgb(0, 0, 0);">　</span></b><b style="line-height: 1.5;"><span style="font-size: 14px; color: rgb(0, 0, 0);">　</span></b><a href="#menu6"><b style="line-height: 1.5;"><span style="font-size: 14px; color: rgb(0, 0, 0);">6. 핫 키(HotKey) 설정 및 사용</span></b></a></p>
+<span style="color: rgb(0, 0, 0);">
+</span><p style="font-family: Gulim;"><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><a href="#menu6-1"><span style="color: rgb(0, 0, 0);">1. 핫키 설명</span></a></p>
+<span style="color: rgb(0, 0, 0);">
+</span><p style="font-family: Gulim;"><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><a href="#menu6-2"><span style="color: rgb(0, 0, 0);">2. 핫키 설정</span></a></p>
+<span style="color: rgb(0, 0, 0);">
+</span><p style="font-family: Gulim;"><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><a href="#menu6-3"><span style="color: rgb(0, 0, 0);">3. 핫키 사용</span></a></p>
+<span style="color: rgb(0, 0, 0);">
+</span><p style="font-family: Gulim;"><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><a href="#menu6-4"><span style="color: rgb(0, 0, 0);">4. 잠금 상태 설정</span></a></p>
+<span style="color: rgb(0, 0, 0);">
+</span><p style="font-family: Gulim;"><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><a href="#menu6-5"><span style="color: rgb(0, 0, 0);">5. 핫키 초기화</span></a></p>
+<span style="color: rgb(0, 0, 0);">
+</span><p style="font-family: Gulim;"><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><a href="#menu6-6"><span style="color: rgb(0, 0, 0);">6. 키보드 잠금 기능으로 활용</span></a></p>
+<span style="color: rgb(0, 0, 0);">
+</span><p style="font-family: Gulim;"><b style="line-height: 1.5;"><span style="font-size: 14px; color: rgb(0, 0, 0);">　　</span></b><span style="font-size: 14px; line-height: 21px;"><a href="#menu7"><b><span style="color: rgb(0, 0, 0);">7. 임시 레이어(Temporarily Layer) 설정 및 사용</span></b></a></span></p>
+<span style="color: rgb(0, 0, 0);">
+</span><p style="font-family: Gulim;"><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><a href="#menu7-1"><span style="color: rgb(0, 0, 0);">1. 임시 레이어 키 매핑</span></a></p>
+<span style="color: rgb(0, 0, 0);">
+</span><p style="font-family: Gulim;"><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><a href="#menu7-2"><span style="color: rgb(0, 0, 0);">2. 임시 레이어 적용 및 해제</span></a></p>
+<span style="color: rgb(0, 0, 0);">
+</span><p style="font-family: Gulim;"><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><a href="#menu7-3"><span style="color: rgb(0, 0, 0);">3. 임시 레이어 사용 예</span></a></p>
+<span style="color: rgb(0, 0, 0);">
+</span><p style="font-family: Gulim;"><b style="line-height: 1.5;"><span style="font-size: 14px; color: rgb(0, 0, 0);">　　</span></b><a href="#menu8"><b style="line-height: 1.5;"><span style="font-size: 14px; color: rgb(0, 0, 0);">8. 키보드에 설정된 키 매핑 및 매크로 정보 가져오기</span></b><b style="line-height: 1.5;"><span style="font-size: 14px;"><br /></span></b></a></p>
+<span style="color: rgb(0, 0, 0);">
+</span><p style="font-family: Gulim;"><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><a href="#menu8-1"><span style="color: rgb(0, 0, 0);">1. 키 매핑 프로그램 설정</span></a></p>
+<span style="color: rgb(0, 0, 0);">
+</span><p style="font-family: Gulim;"><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(0, 0, 0);">　</span><a href="#menu8-2"><span style="color: rgb(0, 0, 0);">2. 키 매핑 및 매크로 정보 추출</span></a></p>
+<span style="color: rgb(0, 0, 0);">
+</span><p style="font-family: Gulim;"><br /></p>
+<p style="font-family: Gulim;"><br /></p>
+<a name="menu1"></a>
+<table cellspacing="2" width="600" style="font-family: Gulim; border-spacing: 1px; background: rgb(58, 50, 195);"><tbody><tr style="background: rgb(106, 101, 187);"><td><p>&nbsp;<b style="line-height: 1.5;"><span style="font-size: 16px; color: rgb(255, 255, 255);">1. 사용자 레이어 및 펑션키(FN, MFN)</span></b></p>
+</td></tr></tbody></table>
+<p style="font-family: Gulim;"><br /></p>
+<p style="font-family: Gulim;">02D 커스텀 펌웨어에는 4가지 종류의 9개 레이어가 존재하며 아래와 같습니다.<br /></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　고정하여 사용 가능한 사용자 레이어 (4 레이어)</span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">FN키 조합으로만 사용 가능한 펑션 레이어 (3 레이어)</span><br /></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　실시간으로 변경 및 단축키 설정이 가능한 핫키 레이어 (1 레이어) - 별도 설명</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　설정된 키가 눌리는 동안만 유지되는 임시 레이어 (1 레이어) - 별도 설명</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">물리적으로 눌려있는 키는, 레이어 변경, 펑션키 조합, 각 기능 사용 등의 경우에도 키값이 변하지 않습니다.</span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　키가 눌린 상태로 레이어 변경 등의 경우, 키 누름 해제 후 다시 누를시 변경된 레이어의 키가 적용됩니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><br /></p>
+<a name="menu1-1"></a>
+<p style="font-family: Gulim;"><b><span style="font-size: 14px;">1. 사용자 레이어(4 레이어)</span></b></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　※&nbsp;</span>고정된 레이어로, 레이어 토글 기능이나&nbsp;<span style="color: rgb(255, 0, 255);"><b><span style="color: rgb(255, 0, 0);"><span style="color: rgb(0, 170, 255);">Ly1</span><span style="color: rgb(0, 170, 255);">&nbsp;~&nbsp;</span><span style="color: rgb(0, 170, 255);">Ly4</span></span></b></span>의&nbsp;<span style="line-height: 1.5;">키를 눌러&nbsp;</span><span style="line-height: 1.5;">레이어 변경이 가능합니다.</span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">사용 방법 1 : 키 매핑시 설정된 키(<span style="color: rgb(255, 0, 0);"><b><span style="color: rgb(0, 170, 255);">Ly1 ~ Ly4</span></b></span>)를 눌러 직접 변경</span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">사용 방법 2 : 레이어 토글 키(<span style="color: rgb(255, 0, 0);"><b><span style="color: rgb(0, 170, 255);">Ly TG</span></b></span>)를 눌러 설정된 토글레이어로 변경</span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">사용 방법 3 : 레이어 순환 키(<span style="color: rgb(255, 0, 0);"><b><span style="color: rgb(0, 170, 255);">Ly CH</span></b></span>)를 눌러 1&gt;2&gt;3&gt;4&gt;1... 의 순서로 변경</span></p>
+<p style="font-family: Gulim;"><br /></p>
+<a name="menu1-2"></a>
+<p style="font-family: Gulim;"><b><span style="font-size: 14px;">2. 펑션 레이어(3 레이어)</span></b></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span>※&nbsp;<span style="font-weight: bold; color: rgb(0, 170, 255);">FN1, FN2, FN3, MFN</span>&nbsp;키와 조합으로만 사용 가능합니다.<br /></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;"><span style="color: rgb(0, 170, 255);"><b>FN1</b></span>&nbsp;:&nbsp;</span><span style="line-height: 1.5;">해당&nbsp;</span><span style="line-height: 1.5;">키가 눌려있는 동안,</span><span style="line-height: 1.5; color: rgb(0, 158, 37);"><b>&nbsp;FN1 레이어</b></span><span style="line-height: 1.5;">의 키들이 입력됨</span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="color: rgb(255, 0, 0);"><b><span style="color: rgb(0, 170, 255);">FN2</span><span style="color: rgb(0, 170, 255);">, FN3</span></b></span>&nbsp;:&nbsp;<b><span style="color: rgb(0, 170, 255);">FN1</span></b>과 동일하며, 각 숫자에 해당하는 레이어의 키들이 입력됨<br /></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><b><span style="color: rgb(0, 170, 255);">MFN</span></b>&nbsp;:&nbsp;<b><span style="color: rgb(0, 170, 255);">FN1, FN2, FN3</span></b>의 기능을 모두 사용 가능한 멀티 펑션 기능키<br /></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">1회 누름 유지시&nbsp;<b><span style="color: rgb(0, 170, 255);">FN1</span></b>의 기능과 동일</span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">1회 누르고 1초 안에 2회 누름 유지시&nbsp;<b><span style="color: rgb(0, 170, 255);">FN2</span></b>의 기능과 동일&nbsp;</span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">2회 누르고 3회 누름 유지시&nbsp;<b><span style="color: rgb(0, 170, 255);">FN3</span></b>의 기능과 동일</span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">연속 입력 인식시간은,&nbsp;<b><span style="color: rgb(0, 170, 255);">MFN</span></b>&nbsp;키의 누름 해제 후 1초 이내</span></p>
+<p style="font-family: Gulim;"><br /></p>
+<a name="menu1-3"></a>
+<p style="font-family: Gulim;"><b><span style="font-size: 14px;">3. 레이어 인디케이터</span></b><br /></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">사용자 레이어가 변경되면, 변경된 레이어 번호만큼 인디케이터 LED가 깜박입니다.</span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　기본 상태는 2.5초마다 현재 적용중인 레이어의 번호만큼 깜박이도록 설정되어 있습니다.</span><br /></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;"><span style="color: rgb(255, 0, 0);"></span>　<span style="color: rgb(255, 0, 0);">※ 인디케이터 LED 위치 정보</span></span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　라이트세이버 : 제일 오른쪽, 맨 위</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　오리온 : 기본 ESC 위치</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　바이퍼/이글 : 캡스락 위치</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　덕미니 : 캡스락 위치</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5; color: rgb(255, 0, 0);">※ 컴퓨터 부팅 또는 케이블 연결 후</span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="color: rgb(255, 0, 0); line-height: 1.5;">인디케이터 LED만 점등되고 나머지 LED가 작동하지 않는 경우,</span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="color: rgb(255, 0, 0); line-height: 1.5;">USB 통신에 실패하거나 문제가 발생한 경우이므로,</span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="color: rgb(255, 0, 0); line-height: 1.5;">케이블을 다시 연결하거나 점검이 필요한 경우입니다.</span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="color: rgb(255, 0, 0); line-height: 1.5;">※&nbsp;</span><span style="color: rgb(255, 0, 0); line-height: 1.5;">표시 방법 변경은 아래 2번 항목에서 설명</span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;"><br /></span></p>
+<a name="menu2"></a>
+<table cellspacing="2" width="600" style="font-family: Gulim; border-spacing: 1px; background: rgb(58, 50, 195);"><tbody><tr style="background: rgb(106, 101, 187);"><td><p>&nbsp;<b style="line-height: 1.5;"><span style="font-size: 16px; color: rgb(255, 255, 255);">2. 컨트롤 모드(C/M)와 기능 설정 변경</span></b></p>
+</td></tr></tbody></table><p style="font-family: Gulim;"><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">컨트롤 모드(<b><span style="color: rgb(0, 170, 255);">C/M</span></b>)란, 키보드의 기능을 제어하기 위한 상태를 말합니다.</span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　별도 표시되지 않은 설정된 기능은 자동 저장 및 적용됨니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">컨트롤 모드에 진입해도, 레이어 변경 및 FN키를 이용한 키 조합을 통한 키 입력이 가능합니다.</span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="color: rgb(255, 0, 0);">※ 컨트롤 모드에서 입력되는 명령어는, 마지막 입력된 3자리를 기준으로 입력됩니다.</span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5; color: rgb(255, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(255, 0, 0);">　</span><span style="color: rgb(255, 0, 0);">오타 입력시, 명령어에 포함되지 않는 키(스페이스바 등)를 3회 이상 누른 후 다시 입력하면 됩니다.</span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;"><br /></span></p>
+<a name="menu2-1"></a>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;"><b><span style="font-size: 14px;">1. 컨트롤 모드(</span><span style="color: rgb(0, 170, 255); font-size: 14px;">C/M</span><span style="font-size: 14px;">) 진입</span></b></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　키보드에 매핑된&nbsp;<b><span style="color: rgb(0, 170, 255);">C/M</span></b>키가 눌리면 진입됩니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　※&nbsp;</span><span style="line-height: 1.5;"><span style="color: rgb(0, 170, 255);"><b>FN(FN1~FN3, MFN)</b></span>키와 조합하거나, 사용자 레이어에 직접 설정해도 사용 가능합니다.</span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　인디케이터 LED가 1회 깜박이고, 2회째 켜짐상태가 유지되면 컨트롤 모드에 진입된 것입니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　※ 바이퍼, 이글, 덕미니의 경우, 캡스락이 켜진경우 반대로 작동합니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;"><br /></span></p>
+<a name="menu2-2"></a>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;"><b><span style="font-size: 14px;">2. 컨트롤 모드(</span><span style="color: rgb(0, 170, 255); font-size: 14px;">C/M</span><span style="font-size: 14px;">) 종료</span></b></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　ESC 키를 누르면 종료되며, 일반적인 키보드 입력상태로 사용 가능합니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　인디케이터 LED가 1회 깜박인 후 이전 상태로 복원됩니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;"><br /></span></p>
+<a name="menu2-3"></a>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;"><b><span style="font-size: 14px;">3. 기본 초기화 설정 (EEPROM ALL CLEAR)</span></b></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　각 기능의 설정 상태, LED 효과, 매크로, 키 잠금, 핫키 등을 초기 설정으로 변경합니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　매핑 프로그램으로 설정된 정적 하드웨어 매크로(<b><span style="color: rgb(0, 170, 255);">SM01~SM20</span></b>) 및 키 매핑은 변경되지 않습니다.</span><br /></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　3-1.&nbsp;<b><span style="color: rgb(0, 170, 255);">C/M</span></b>&nbsp;키를 눌러 컨트롤 모드 진입</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　3-2.&nbsp;<font color="#009e25"><b><span style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 170, 255);">E</span>,&nbsp;<span style="color: rgb(0, 170, 255);">A</span>,&nbsp;<span style="color: rgb(0, 170, 255);">C</span>,&nbsp;<span style="color: rgb(0, 170, 255);">Enter</span></span></b></font>&nbsp;입력</span><br /></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　3-3. 초기화 과정 진행 후 키보드가 자동으로 재시작 됨</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;"><br /></span></p>
+<a name="menu2-4"></a>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;"><b><span style="font-size: 14px;">4. 레이어 상태 인디케이터(LED) 표시 방법 변경</span></b></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><b>※ 레이어 상태 인디케이터의 기본 표시 상태</b><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　기본적으로, 사용자가 레이어를 변경(<b><span style="color: rgb(0, 170, 255);">Ly1~Ly4</span></b>)하거나, 토글(<b><span style="color: rgb(0, 170, 255);">Ly TG</span></b>)하거나, 순환 변경(<b><span style="color: rgb(0, 170, 255);">Ly CH</span></b>)할 때,</span><br /></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　변경되는 레이어의 번호만큼 깜박입니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　최초 설정 상태는, 2.5초마다 깜박이도록 설정되어 있으며,&nbsp;<b>기본 초기화 설정</b>&nbsp;진행 후 노멀상태로 설정됩니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　<b>※ 레이어 상태 인디케이터 모드</b></span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　<span style="color: rgb(0, 158, 37);"><b>LLN(</b></span></span><b style="line-height: 1.5; color: rgb(0, 158, 37);">Normal)</b><span style="line-height: 1.5;">: 사용자가 레이어를 변경할 때, 변경된 레이어 번호만큼 깜박임</span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　<b><span style="color: rgb(0, 158, 37);">LLT(</span></b></span><b style="line-height: 1.5;"><span style="color: rgb(0, 158, 37);">Toggle)</span></b><span style="line-height: 1.5;">&nbsp;: 레이어 토글(Ly TG) 상태일 때 켜짐</span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　<b><span style="color: rgb(0, 158, 37);">LLB(</span></b></span><b style="line-height: 1.5;"><span style="color: rgb(0, 158, 37);">Blink)</span></b><span style="line-height: 1.5;">&nbsp;: 2.5초마다 설정된 사용자 레이어의 번호만큼 깜박임</span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　4-1.&nbsp;</span><b style="line-height: 1.5;"><span style="color: rgb(0, 170, 255);">C/M</span></b><span style="line-height: 1.5;">&nbsp;</span><span style="line-height: 1.5;">키를 눌러 컨트롤 모드 진입</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　4-2. 설정할 모드 입력</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　ex) 노멀 상태(<b><span style="color: rgb(0, 158, 37);">LLN</span></b>) 설정시</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　<b><span style="color: rgb(0, 158, 37);"><span style="color: rgb(0, 170, 255);">L</span><span style="color: rgb(0, 0, 0);">,</span><span style="color: rgb(0, 170, 255);">&nbsp;L</span></span></b></span><b>,</b><span style="line-height: 1.5;"><b><span style="color: rgb(0, 170, 255);">&nbsp;N</span></b></span><b>,</b><span style="line-height: 1.5;"><b><span style="color: rgb(0, 170, 255);">&nbsp;Enter</span></b>&nbsp;입력</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　설정 적용 후 컨트롤 모드로 복귀</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　4-3. 컨트롤 모드 종료(<b><span style="color: rgb(0, 170, 255);">ESC</span></b>) 또는 다른 설정 변경</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><br /></p>
+<a name="menu2-5"></a>
+<p style="font-family: Gulim;"><b><span style="font-size: 14px;">5. 토글 레이어(Toggle Layer) 변경</span></b></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　※&nbsp;레이어 토글(<b><span style="color: rgb(0, 170, 255);">Ly TG</span></b>)키가 눌리면, 지정된 레이어로 변환됩니다.</span><b><br /></b></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　※ 기본적으로 2번 레이어(<b><span style="color: rgb(0, 170, 255);">Ly2</span></b>)로 설정되어 있으며,&nbsp;</span><span style="line-height: 1.5;">1번 레이어(<b><span style="color: rgb(0, 170, 255);">Ly1</span></b>)는 설정할 수 없습니다.</span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　5-1.&nbsp;</span><b style="line-height: 1.5;"><span style="color: rgb(0, 170, 255);">C/M</span></b><span style="line-height: 1.5;">&nbsp;</span><span style="line-height: 1.5;">키를 눌러 컨트롤 모드 진입</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　5-2.&nbsp;</span><span style="line-height: 1.5;"><b><span style="color: rgb(0, 158, 37);"><span style="color: rgb(0, 170, 255);">T</span><span style="color: rgb(0, 0, 0);">,</span><span style="color: rgb(0, 170, 255);">&nbsp;L</span></span></b></span><b>,</b><span style="line-height: 1.5;"><b><span style="color: rgb(0, 170, 255);">&nbsp;Enter</span></b></span><span style="line-height: 1.5;">&nbsp;입력 &gt; 인디케이터 LED 2회 점멸</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　5-3. 변경할 레이어 숫자를 누름 - 키패드의 숫자는 인식하지 않음</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　5-4. 인디케이터 LED 2회 점멸, 설정 적용 후 컨트롤 모드로 복귀</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　5-5.&nbsp;</span><span style="line-height: 1.5;">컨트롤 모드 종료</span><span style="line-height: 1.5;">(</span><b style="line-height: 1.5;"><span style="color: rgb(0, 170, 255);">ESC</span></b><span style="line-height: 1.5;">)</span><span style="line-height: 1.5;">&nbsp;또는 다른 설정 변경</span></p>
+<p style="font-family: Gulim;"><br /></p>
+<a name="menu2-6"></a>
+<p style="font-family: Gulim;"><b><span style="font-size: 14px;">6. Debounce 설정 변경</span></b></p>
+<p style="font-family: Gulim;"><strike><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　※ 중복입력 처리값으로, 최소한의 처리값이 0으로 설정되어 있습니다.</span><br /></strike></p>
+<p style="font-family: Gulim;"><strike><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　※ 설정값이 높을수록 키 입력시 지연이 발생합니다.</span><span style="line-height: 1.5;"><br /></span></strike></p>
+<p style="font-family: Gulim;"><strike><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　※&nbsp;키 입력시 중복입력이 발생할 경우, 값을 높여가며 설정(<b><span style="color: rgb(0, 170, 255);">0~9</span></b>까지 설정 가능)하면 됩니다.</span><span style="line-height: 1.5;"><br /></span></strike></p>
+<p style="font-family: Gulim;"><span style="color: rgb(255, 0, 0);">[2014.09.30 변경]</span><strike><span style="line-height: 1.5;"><br /></span></strike></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　※ 중복입력 처리값으로, 기본 처리값은 10ms로 설정되어 있습니다.</span><br /></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　※ 기존 선처리/후입력 방식을 개선하여, 각 키 개별 선입력/후처리 방식으로 작동합니다.</span><br /></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　※ 키 입력 지연시간은 설정시간의 영향을 받지 않습니다.</span><br /></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　※ 설정된 시간만큼 키 누름 유지 및 재입력 대기 시간으로 적용됩니다.</span><br /></p>
+<div style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　※&nbsp;키 입력시 중복입력이 발생할 경우, 값을 높여가며 설정(<b><span style="color: rgb(0, 170, 255);">5~250ms</span></b>까지 설정 가능)하면 됩니다.</span><br /></div><p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　6-1.&nbsp;</span><b style="line-height: 1.5;"><span style="color: rgb(0, 170, 255);">C/M</span></b><span style="line-height: 1.5;">&nbsp;</span><span style="line-height: 1.5;">키를 눌러 컨트롤 모드 진입</span><br /></p>
+<p style="font-family: Gulim;">　<span style="line-height: 1.5;">　6-2.&nbsp;</span><span style="line-height: 1.5;"><b><span style="color: rgb(0, 158, 37);"><span style="color: rgb(0, 170, 255);">D</span><span style="color: rgb(0, 0, 0);">,</span><span style="color: rgb(0, 170, 255);">&nbsp;B</span></span></b></span><b>,</b><span style="line-height: 1.5;"><b><span style="color: rgb(0, 170, 255);">&nbsp;Enter</span></b></span><span style="line-height: 1.5;">&nbsp;입력</span><span style="line-height: 1.5;">&nbsp;</span><span style="line-height: 1.5;">&gt; 인디케이터 LED 2회 점멸</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><strike><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　6-3. 설정할 숫자를 누름 -&nbsp;<b><span style="color: rgb(0, 170, 255);">0~9</span></b>까지 문자열 위의 숫자 키</span><span style="line-height: 1.5;"><br /></span></strike></p>
+<p style="font-family: Gulim;"><strike><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　6-4.&nbsp;</span><span style="line-height: 1.5;">인디케이터 LED 2회 점멸,</span><span style="line-height: 1.5;">&nbsp;</span><span style="line-height: 1.5;">설정 적용 후 컨트롤 모드로 복귀</span><br /></strike></p>
+<p style="font-family: Gulim;"><strike><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　6-5. 컨트롤 모드 종료</span><span style="line-height: 1.5;">(</span><b style="line-height: 1.5;"><span style="color: rgb(0, 170, 255);">ESC</span></b><span style="line-height: 1.5;">)</span><span style="line-height: 1.5;">&nbsp;또는 다른 설정 변경</span></strike></p>
+<p style="font-family: Gulim;"><span style="color: rgb(255, 0, 0);">[2014.09.30 변경]</span><strike><span style="line-height: 1.5;"><br /></span></strike></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　6-3. 설정할 값을 누름 -&nbsp;<b><span style="color: rgb(0, 170, 255);">5~250</span></b>까지 문자열 위의 숫자 키</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　6-4.&nbsp;</span><b style="line-height: 1.5;"><span style="color: rgb(0, 170, 255);">C/M</span></b><span style="line-height: 1.5;">&nbsp;</span><span style="line-height: 1.5;">키를 눌러 설정값 저장</span><br /></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　6-5.&nbsp;</span><span style="line-height: 1.5;">인디케이터 LED 2회 점멸,</span><span style="line-height: 1.5;">&nbsp;</span><span style="line-height: 1.5;">설정 적용 및 저장 후 컨트롤 모드로 복귀</span><br /></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　6-6. 컨트롤 모드 종료</span><span style="line-height: 1.5;">(</span><b style="line-height: 1.5;"><span style="color: rgb(0, 170, 255);">ESC</span></b><span style="line-height: 1.5;">)</span><span style="line-height: 1.5;">&nbsp;또는 다른 설정 변경</span></p>
+<div style="font-family: Gulim;"><span style="line-height: 1.5;"><br /></span></div>
+<a name="menu2-7"></a>
+<p style="font-family: Gulim;"><b style="line-height: 1.5;"><span style="font-size: 14px;">7. Shift + ESC = ~ 사용하기</span></b><br /></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　※ Shift + ESC 입력시 ~ 표시가 입력되도록 하는 기능입니다.</span><br /></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　눌려있는 키가 없는 경우(Shift 키 제외)에만 적용되며, 적용 후의 키 입력에 제한은 없습니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　눌림 상태 유지(~키 연속 입력)가 가능합니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　※ 설정 상태는 자동으로 저장되며, 케이블 재연결, 컴퓨터 재부팅의 경우에도 자동으로 적용됩니다.</span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　7-1.&nbsp;</span><b style="line-height: 1.5;"><span style="color: rgb(0, 170, 255);">C/M</span></b><span style="line-height: 1.5;">&nbsp;</span><span style="line-height: 1.5;">키를 눌러 컨트롤 모드 진입</span><br /></p>
+<p style="font-family: Gulim;">　<span style="line-height: 1.5;">　7-2.&nbsp;</span><span style="line-height: 1.5;"><b><span style="color: rgb(0, 158, 37);"><span style="color: rgb(0, 170, 255);">Shift(Left Shift or Right Shift)</span><span style="color: rgb(0, 0, 0);">,</span><span style="color: rgb(0, 170, 255);">&nbsp;~</span></span></b></span><b>,</b><span style="line-height: 1.5;"><b><span style="color: rgb(0, 170, 255);">&nbsp;Enter</span></b></span><span style="line-height: 1.5;">&nbsp;입력</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　7-3.&nbsp;</span><span style="line-height: 1.5;">인디케이터 LED 2회 점멸하면 설정 상태이며, 1회 점멸하면 해제된 상태입니다.</span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　7-4. 컨트롤 모드 종료</span><span style="line-height: 1.5;">(</span><b style="line-height: 1.5;"><span style="color: rgb(0, 170, 255);">ESC</span></b><span style="line-height: 1.5;">)</span><span style="line-height: 1.5;">&nbsp;또는 다른 설정 변경</span><br /></p>
+<div style="font-family: Gulim;"><span style="line-height: 1.5;"><br /></span></div><div style="font-family: Gulim;">
+<a name="menu2-8"></a>
+<p><b><span style="font-size: 14px;">8. 부트로더 진입</span></b></p>
+</div><div style="font-family: Gulim;"><p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　※ 케이블을 탈착 하지 않고, 부트로더(펌웨어 업로드 가능 상태)에 진입할 수 있습니다.</span><br /></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　8-1.&nbsp;</span><b style="line-height: 1.5;"><span style="color: rgb(0, 170, 255);">C/M</span></b><span style="line-height: 1.5;">&nbsp;</span><span style="line-height: 1.5;">키를 눌러 컨트롤 모드 진입</span><br /></p>
+<p>　<span style="line-height: 1.5;">　8-2.&nbsp;</span><span style="line-height: 1.5;"><b><span style="color: rgb(0, 158, 37);"><span style="color: rgb(0, 170, 255);">B</span><span style="color: rgb(0, 0, 0);">,</span><span style="color: rgb(0, 170, 255);">&nbsp;T</span></span></b></span><b>,</b><span style="line-height: 1.5;"><b><span style="color: rgb(0, 170, 255);">&nbsp;</span></b></span><span style="line-height: 1.5;"><b><span style="color: rgb(0, 158, 37);"><span style="color: rgb(0, 170, 255);">R</span></span></b></span><b style="line-height: 1.5;">,</b><span style="line-height: 1.5;"><b><span style="color: rgb(0, 170, 255);">&nbsp;</span></b></span><span style="line-height: 1.5;"><b><span style="color: rgb(0, 170, 255);">Enter</span></b></span><span style="line-height: 1.5;">&nbsp;입력</span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　8-3. 모든 LED가 오프되고, 약 3초 이내에 부트로더로 진입합니다.</span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　8-4. 펌웨어를 업로드 하거나, 매핑 프로그램의 펌웨어 업로드 폼의&nbsp;<span style="color: rgb(0, 158, 37);"><b>'Starting the keyboard'</b></span>&nbsp;버튼을 눌러,</span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">일반적인 키보드 상태로 전환할 수 있습니다.</span></p>
+</div><div style="font-family: Gulim;"><span style="line-height: 1.5;"><br /></span></div><div style="font-family: Gulim;">
+<a name="menu2-9"></a>
+<div><p><b><span style="font-size: 14px;">9. 키보드에 적용된 펌웨어의 버전 확인</span></b></p>
+</div><div><p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　※ 현재 키보드에 적용되어 있는 펌웨어의 버전을 확인할 수 있습니다.</span><br /></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　9-1.&nbsp;</span><b style="line-height: 1.5;"><span style="color: rgb(0, 170, 255);">C/M</span></b><span style="line-height: 1.5;">&nbsp;</span><span style="line-height: 1.5;">키를 눌러 컨트롤 모드 진입</span><br /></p>
+<p>　<span style="line-height: 1.5;">　9-2.&nbsp;</span><span style="line-height: 1.5;"><b><span style="color: rgb(0, 158, 37);"><span style="color: rgb(0, 170, 255);">V</span><span style="color: rgb(0, 0, 0);">,</span><span style="color: rgb(0, 170, 255);">&nbsp;E</span></span></b></span><b>,</b><span style="line-height: 1.5;"><b><span style="color: rgb(0, 170, 255);">&nbsp;</span></b></span><span style="line-height: 1.5;"><b><span style="color: rgb(0, 158, 37);"><span style="color: rgb(0, 170, 255);">R</span></span></b></span><b style="line-height: 1.5;">,</b><span style="line-height: 1.5;"><b><span style="color: rgb(0, 170, 255);">&nbsp;</span></b></span><span style="line-height: 1.5;"><b><span style="color: rgb(0, 170, 255);">Enter</span></b></span><span style="line-height: 1.5;">&nbsp;입력</span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　9-3. 버전 정보가 출력되고, 일반적인 키보드 상태로 전환됩니다.</span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　ex) 1.5.333</span><br /></p>
+</div></div><div style="font-family: Gulim;"><span style="line-height: 1.5;"><br /></span></div><p style="font-family: Gulim;"><br /></p>
+<a name="menu3"></a>
+<table cellspacing="2" width="600" style="font-family: Gulim; border-spacing: 1px; background: rgb(58, 50, 195);"><tbody><tr style="background: rgb(106, 101, 187);"><td><p>&nbsp;<b style="line-height: 1;"><span style="font-size: 16px; color: rgb(255, 255, 255);">3. LED 제어 및 효과 변경</span></b></p>
+</td></tr></tbody></table><p style="font-family: Gulim;"><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;">LED 밝기 및 이펙트 효과를 설정하는 방법입니다.</p>
+<p style="font-family: Gulim;"><br /></p>
+<p style="font-family: Gulim;">※ 설정된 LED 이펙트 효과는,</p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　키보드가 정상 연결(USB 인식)된 후 약 2.5초 이내에 작동하며,</span><br /></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　절전모드 또는 사용중 USB 통신 실패시 꺼짐상태로 유지됩니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;"><br /></span></p>
+<a name="menu3-1"></a>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;"><b><span style="font-size: 14px;">1. LED 제어 관련 키 설명</span></b></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 12px; background-color: rgb(255, 255, 255);"><b><span style="color: rgb(0, 170, 255);">LED Ctrl</span></b><span class="Apple-tab-span">	</span>LED 컨트롤 모드 진입/해제</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　<b><span style="color: rgb(0, 170, 255);">LED Up</span></b><span class="Apple-tab-span">	</span>LED 밝기 증가 / LED 임시 끄기 해제</span><span style="line-height: 12px; background-color: rgb(255, 255, 255);"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="background-color: rgb(255, 255, 255);"><b><span style="color: rgb(0, 170, 255);">LED Dn</span></b><span class="Apple-tab-span">	</span>LED 밝기 감소 / LED 임시 끄기 설정</span><span style="line-height: 12px; background-color: rgb(255, 255, 255);"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5; background-color: rgb(255, 255, 255);"><b><span style="color: rgb(0, 170, 255);">LED Func</span></b><span class="Apple-tab-span">	</span>펑션열(이글/바이퍼의 경우 숫자열) 효과 변경 / 밝기 조절 채널 선택</span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="background-color: rgb(255, 255, 255);"><b><span style="color: rgb(0, 170, 255);">LED Modi</span></b><span class="Apple-tab-span">	</span>모디열 효과 변경</span><span style="line-height: 1.5; background-color: rgb(255, 255, 255);">&nbsp;</span><span style="line-height: 1.5; background-color: rgb(255, 255, 255);">/ 밝기 조절 채널 선택</span><span style="line-height: 1.5; background-color: rgb(255, 255, 255);"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="background-color: rgb(255, 255, 255);"><b><span style="color: rgb(0, 170, 255);">LED Alph</span></b><span class="Apple-tab-span">	</span>문자열 효과 변경</span><span style="line-height: 1.5; background-color: rgb(255, 255, 255);">&nbsp;</span><span style="line-height: 1.5; background-color: rgb(255, 255, 255);">/ 밝기 조절 채널 선택</span><span style="background-color: rgb(255, 255, 255);"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="background-color: rgb(255, 255, 255);"><b><span style="color: rgb(0, 170, 255);">LED Pad</span></b><span class="Apple-tab-span">	</span>편집열(또는 패드) 효과 변경</span><span style="line-height: 1.5; background-color: rgb(255, 255, 255);">&nbsp;</span><span style="line-height: 1.5; background-color: rgb(255, 255, 255);">/ 밝기 조절 채널 선택</span><span style="background-color: rgb(255, 255, 255);"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="background-color: rgb(255, 255, 255);"><b><span style="color: rgb(0, 170, 255);">LED Side</span></b><span class="Apple-tab-span">	</span>사이드(후면 기본 장착) 효과 변경</span><span style="line-height: 1.5; background-color: rgb(255, 255, 255);">&nbsp;</span><span style="line-height: 1.5; background-color: rgb(255, 255, 255);">/ 밝기 조절 채널 선택</span><span style="background-color: rgb(255, 255, 255);"><br /></span></p>
+<p style="font-family: Gulim;"><br /></p>
+<a name="menu3-2"></a>
+<p style="font-family: Gulim;"><b><span style="line-height: 1.5; font-size: 14px;">2. LED&nbsp;</span><span style="font-size: 14px;">컨트롤&nbsp;</span><span style="line-height: 1.5;"><span style="font-size: 14px;">모드(</span><span style="color: rgb(0, 170, 255); font-size: 14px;">LED Ctrl</span><span style="font-size: 14px;">)를 이용한 밝기 조절</span></span></b></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　※ 각 LED 채널의 밝기를 조절하기 위한 상태를 말합니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　펑션열, 모디열, 문자열, 키패드(또는 편집열), 사이드 채널 개별 변경 가능</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　2-1.&nbsp;</span><b style="line-height: 1.5;"><span style="color: rgb(0, 170, 255);">LED Ctrl</span></b><span style="line-height: 1.5;">&nbsp;</span><span style="line-height: 1.5;">키를 눌러 LED 컨트롤 모드 진입</span><br /></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　2-2. 밝기를 변경할 채널을 선택</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　<b><span style="color: rgb(0, 170, 255);">LED Func, LED Modi, LED Alph, LED Pad, LED Side</span></b>&nbsp;키를 눌러 선택 가능하며,</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　선택된 채널 LED에 불이 들어오고, 누를때마다 선택 상태가 토글(선택/해제) 됩니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　2-3. 밝기 조절</span><br /></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　<b><span style="color: rgb(0, 170, 255);">LED Up, LED Down</span></b>&nbsp;키를 눌러 밝기를 조절합니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　밝기 조절 키(<span style="color: rgb(0, 170, 255);"><b>LED Up, LED Down</b></span>)가 눌려있는 동안에만 변경됩니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　밝기 조절 범위는, 총 256단계 중 26단계 이상만 설정 가능합니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　※ LED 이펙트 효과를 표현하기 위한 제한</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　2-4. LED 컨트롤 모드 종료 및 저장</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　LED Ctrl 키를 누르면 종료되며, 약 2초 안에 자동으로 저장됩니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　※ 2-2 항목의 채널 선택 토글 기능을 활용하여, 각 채널별 밝기를 비교하며 설정할 수 있습니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5; color: rgb(255, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(255, 0, 0);">　※ 기본 키맵의 경우, LED 제어 관련 키들은 대부분&nbsp;<b><span style="color: rgb(0, 158, 37);">FN3 레이어</span></b>에 있으며,</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5; color: rgb(255, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(255, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(255, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(255, 0, 0);">　원활한 밝기 조절을 위해&nbsp;<span style="color: rgb(0, 170, 255);"><b>FN3</b></span>(또는&nbsp;<span style="color: rgb(0, 170, 255);"><b>MFN</b></span>&nbsp;3회째 누름 유지) 누름 상태를 유지한 채,</span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5; color: rgb(255, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(255, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(255, 0, 0);">　</span><span style="line-height: 1.5; color: rgb(255, 0, 0);">　관련 키들을 눌러주시면 됩니다.</span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;"><br /></span></p>
+<a name="menu3-3"></a>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;"><b><span style="font-size: 14px;">3. LED 이펙트 효과 설명 및 변경</span></b></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　3-1. 사용 가능한 LED 이펙트 효과는 아래와 같습니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;">　　　　1(일반). 항상 켜짐</p>
+<p style="font-family: Gulim;">　　　　1(반전). 항상 꺼짐</p>
+<p style="font-family: Gulim;">　　　　2(일반). 숨쉬기 - 켜짐상태 지연</p>
+<p style="font-family: Gulim;">　　　　2(반전). 숨쉬기 - 꺼짐상태 지연</p>
+<p style="font-family: Gulim;">　　　　3(일반). 누르면 켜짐 &gt; 페이드 오프</p>
+<p style="font-family: Gulim;">　　　　3(반전). 누르면 꺼짐 &gt; 페이드 온</p>
+<p style="font-family: Gulim;">　　　　4(일반). 달리기 - 키 입력이 많을수록 숨쉬기의 속도가 빨라짐</p>
+<p style="font-family: Gulim;">　　　　4(반전). 달리기 반전 모드 (일반 달리기의 온&gt;오프 진행시 반전 모드는 오프&gt;온)</p>
+<p style="font-family: Gulim;">　　　　5(일반). 누를수록 밝아짐 &gt; 키 입력이 없으면 꺼짐</p>
+<p style="font-family: Gulim;"></p>
+<p style="font-family: Gulim;">　　　　5(반전). 누를수록 어두워짐 &gt; 키 입력이 없으면 최대 밝기</p>
+<p style="font-family: Gulim;">　　3-2. LED 이펙트 효과 변경 방법</p>
+<p style="font-family: Gulim;">　　　　<span style="color: rgb(255, 0, 0);">※ LED 컨트롤 모드 진입하지 마시고, 일반적인 키보드 상태에서 변경하셔야 합니다.</span><br /></p>
+<p style="font-family: Gulim;">　　　　각 채널별로 이펙트 설정이 가능하며, 위에 작성된 LED 제어 관련 키 중,</p>
+<p style="font-family: Gulim;">　　　　　　<span style="color: rgb(0, 170, 255);"><b>LED Func, LED Modi, LED Alph, LED Pad, LED Side</b></span>&nbsp;키가 눌리면 해당 채널의 효과가 변경됩니다.</p>
+<p style="font-family: Gulim;">　　　　변환 순서는, LED 이펙트 효과 목록의 위에서 아래 순서로 변경되며,</p>
+<p style="font-family: Gulim;">　　　　　　변경된 효과의 번호만큼 LED가 깜박입니다.</p>
+<p style="font-family: Gulim;">　　　　　　※ LED가 깜박이는 동안 효과를 다시 변경하면, 제대로 표시되지 않습니다.</p>
+<p style="font-family: Gulim;">　　　　ex) 펑션열의 LED 효과를 5(일반)-누를수록 밝아짐-으로 변경하고자 한다면,</p>
+<p style="font-family: Gulim;">　　　　　　기본 1(일반)-항상 켜짐-상태일 경우,&nbsp;<b><span style="color: rgb(0, 170, 255);">LED Func</span></b>&nbsp;키를 8번 눌러서 5(일반) 상태로 변경</p>
+<div style="font-family: Gulim;"><br /></div>
+<a name="menu3-4"></a>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;"><b><span style="font-size: 14px;">4. 전체 LED 임시 끄기</span></b></span><br /></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　영화 감상 등 필요에 의해 전체 LED를 잠시 끌 수 있는 기능입니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　캡스락 등의 LED는 꺼지지 않으며, LED 꺼짐 상태는 저장되지 않습니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="color: rgb(255, 0, 0);">※ LED 컨트롤 모드 진입하지 마시고, 일반적인 키보드 상태에서 변경하셔야 합니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　끄기 :&nbsp;<b><span style="color: rgb(0, 170, 255);">LED Dn</span></b>&nbsp;키를 누르면 전체 LED가 꺼집니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　켜기 :&nbsp;<b><span style="color: rgb(0, 170, 255);">LED Up</span></b>&nbsp;키를 누르면 전체 LED가 켜집니다. - 이전 설정 복원</span><span style="line-height: 1.5;"><br /></span></p>
+<p style="font-family: Gulim;"><span style="line-height: 1.5;"><br /></span></p>
+<a name="menu3-5"></a>
+<p style="font-family: Gulim;"><b><span style="font-size: 14px;">5. 숨쉬기 모드의 키 입력 반응 잠금 (</span><span style="color: rgb(0, 170, 255); font-size: 14px;">Push Lock</span><span style="font-size: 14px;">)</span></b></p>
+<p style="font-family: Gulim;">　　숨쉬기 이펙트 효과에서 키 입력시,</p>
+<p style="font-family: Gulim;">　　　　LED가 최대 밝기 또는 최저 밝기로 변경되는 효과를 적용/해제 할 수 있습니다.</p>
+<p style="font-family: Gulim;">　　키 매핑에 설정된&nbsp;<b><span style="color: rgb(0, 170, 255);">Push Lock</span></b>&nbsp;키를 눌러 적용/해제 할 수 있으며,</p>
+<p style="font-family: Gulim;">　　　　LED가 3회 깜박이면 적용, LED가 1회 깜박이면 해제된 상태입니다.</p>
+<p style="font-family: Gulim;">　　해당 설정은, 상태 변경 후 2초 이내에 자동 저장됩니다.</p>
+<div style="font-family: Gulim;"><br /></div>
+<a name="menu3-6"></a>
+<div style="font-family: Gulim;"><p><b><span style="font-size: 14px;">6.&nbsp;</span></b><span style="font-size: 14px; line-height: 21px;"><b>LED 이펙트 우회 기능 추가 (<span style="color: rgb(0, 170, 255);">LED ByPass</span>)&nbsp;</b></span><span style="color: rgb(255, 0, 0); line-height: 1.5;">[2014.09.30 추가]</span></p>
+<p>　　입력 지연시간을 최소화하여 사용할 수 있도록 추가된 기능입니다.</p>
+<p><span style="line-height: 1.5;">　　</span>숨쉬기 등의 LED 이펙트 효과를 사용할 수 없으며, 기본적인 On/Off 기능만 사용 가능합니다.<br /></p>
+<p>　　<span style="line-height: 1.5;">　　※ On/Off 기능만 사용하신다면, 해당 기능을 적용하여 사용하시길 권장합니다.</span><br /></p>
+<p>　　우회 기능 사용시의 LED On/Off 상태는 별도로 저장/적용 됩니다.<br /></p>
+<div><span style="line-height: 1.5;">　　키 매핑에 설정된&nbsp;</span><b style="font-size: 14px; line-height: 21px;"><span style="color: rgb(0, 170, 255); font-size: 12px;">LED ByPass</span></b><span style="line-height: 1.5;">&nbsp;키를 눌러 적용/해제 할 수 있으며,</span><br /></div><p>　　　　LED가 3회 깜박이면 적용, LED가 1회 깜박이면 해제된 상태입니다.</p>
+<p>　　해당 설정은, 상태 변경 즉시 자동 저장됩니다.</p>
+<div><br /></div></div><div style="font-family: Gulim;"><br /></div><div style="font-family: Gulim;">
+<a name="menu4"></a>
+<table cellspacing="2" width="600" style="border-spacing: 1px; background: rgb(58, 50, 195);"><tbody><tr style="background: rgb(106, 101, 187);"><td><p>&nbsp;<b style="line-height: 1.5;"><span style="font-size: 16px; color: rgb(255, 255, 255);">4. 매크로 기록 및 사용</span></b></p>
+</td></tr></tbody></table><p><br /></p>
+<p></p>
+<p>매크로 설정 및 사용에 대한 방법입니다.</p>
+<p><br /></p>
+<p>기본적으로 하드웨어 매크로(DM01~DM15)는 5번 항목의 매크로 딜레이 시간을 기준으로 작동합니다.</p>
+<p>　　빠른 입력을 원할 경우 매크로 딜레이 시간을 0으로 설정하시면 되며,<br /></p>
+<p>　　다중 입력창(로그인 등)에 사용할 경우 딜레이 키(10ms ~ 1sec)로 약간의 딜레이를 설정하거나,</p>
+<p><span style="line-height: 1.5;">　　매크로 딜레이를 설정하</span>시면 됩니다.<br /></p>
+<p><b><br /></b></p>
+<a name="menu4-1"></a>
+<p><b><span style="font-size: 14px;">1. 매크로 관련 키 설명</span></b></p>
+<p>　　1-1. 하드웨어 매크로 관련 키<br /></p>
+<p>　　<span style="line-height: 1.5;">　　사용자가 언제든 변경할 수 있으며, 기본 초기화 설정시 초기화 됩니다.</span><br /></p>
+<p>　　<span style="line-height: 1.5;">　　<span style="color: rgb(0, 170, 255);"><b>DM01 ~ DM15</b></span>&nbsp;: 해당 키가 눌리면, 저장된 내용이 1회만 입력됩니다.</span><br /></p>
+<p>　　<span style="line-height: 1.5;">　　<span style="color: rgb(0, 170, 255);"><b>L/Macro</b></span>&nbsp;: 해당 키를 누르고 매크로 키(<span style="color: rgb(0, 117, 200);"><b><span style="color: rgb(0, 170, 255);">DM01~DM15</span></b></span>)를 누르고 있으면, 저장된 내용이 계속 입력됩니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p>　　<span style="line-height: 1.5;">　　</span><span style="line-height: 1.5;">　　'<span style="color: rgb(0, 158, 37);">1234567890</span>'의 내용이 저장되어 있다면,</span></p>
+<p><span style="line-height: 1.5;">　　</span><span style="line-height: 1.5;">　　</span><span style="line-height: 1.5;">　　</span><span style="line-height: 1.5;"><span style="color: rgb(0, 158, 37);">7</span>까지 입력된 후 키 누름을 해제하면,</span></p>
+<p>　　<span style="line-height: 1.5;">　　</span><span style="line-height: 1.5;">　　<span style="color: rgb(0, 158, 37);">890</span>의 나머지 내용이 모두 입력된 후 입력이 종료됩니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p>　　1-2. 정적 하드웨어 매크로 관련 키<br /></p>
+<p>　　<span style="line-height: 1.5;">　　</span><span style="line-height: 1.5;">키 매핑시에만 설정할 수 있으며, 기본 초기화 설정시에도 초기화 되지 않습니다.</span><br /></p>
+<p>　　<span style="line-height: 1.5;">　　<b><span style="color: rgb(0, 170, 255);">SM01 ~ SM20</span></b></span><span style="line-height: 1.5;">&nbsp;</span><span style="line-height: 1.5;">: 해당 키가 눌리면, 저장된 내용이 1회만 입력됩니다.</span><br /></p>
+<p>　　<span style="line-height: 1.5;">　　<span style="color: rgb(0, 170, 255);"><b>SM19, SM20</b></span>에는 기본적인 컨트롤 모드(<b><span style="color: rgb(0, 170, 255);">C/M</span></b>) 명령어가 출력되도록 설정되어 있습니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p>　　1-3. 매크로 딜레이 관련 키<br /></p>
+<p>　　<span style="line-height: 1.5;">　　매크로 작성시 딜레이 키가 눌리면, 매크로 실행시 해당 시간만큼 지연됩니다.</span><br /></p>
+<p>　　<span style="line-height: 1.5;">　　</span><span style="line-height: 1.5;">　　여러가지 또는 여러번 입력하여 시간을 설정할 수 있습니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p>　　<span style="line-height: 1.5;">　　아래 지연시간 키가 입력되면, 전체 딜레이(6번의 매크로 딜레이)가 무시되고, 해당 시간만큼만 지연됩니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p>　　<span style="line-height: 1.5;">　　<span style="color: rgb(0, 170, 255);"><b>20ms, 50ms, 100ms, 250ms, 500ms, 1sec</b></span></span><span style="line-height: 1.5;"><br /></span></p>
+<p><br /></p>
+<a name="menu4-2"></a>
+<p><b><span style="font-size: 14px;">2. 매크로 기록 (작성)</span></b></p>
+<p>　　※ 정적 하드웨어 매크로 기록 방법은,&nbsp;<a href="http://kbdlab.co.kr/index.php?mid=board_sw&amp;document_srl=370119" target="_blank" style="line-height: 1.5;"><b><span style="color: rgb(0, 0, 255);">링크</span></b></a><span style="line-height: 1.5;">의 4번 항목을 참고하시면 됩니다.</span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　※ 컨트롤 모드에 진입 후 레이어 변경 및 펑션키 조합을 이용한 키 입력 모두 가능합니다.</span><br /></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　레이어 변경 등의 제어 관련 키들은 입력되지 않으며, 일반적으로 사용되는 키들만 기록됩니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　2-1.&nbsp;</span><b style="line-height: 1.5;"><span style="color: rgb(0, 170, 255);">C/M</span></b><span style="line-height: 1.5;">&nbsp;</span><span style="line-height: 1.5;">키를 눌러 컨트롤 모드 진입</span><br /></p>
+<p>　<span style="line-height: 1.5;">　2-2. 매크로 키(<b><span style="color: rgb(0, 170, 255);">DM01 ~ DM15</span></b>)를 누른 후 <span style="color: rgb(0, 170, 255);"><b>Enter</b></span> 입력</span><span style="line-height: 1.5;">&nbsp;</span><span style="line-height: 1.5;">&gt; 인디케이터 LED 2회 점멸&nbsp;</span><span style="color: rgb(255, 0, 0); font-size: 9pt; line-height: 1.5;">[2014.11.09 변경]</span><span style="line-height: 1.5;"><br /></span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　2-3. 저장할 내용을 입력</span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　<b><span style="color: rgb(255, 0, 0);">※ 반복 매크로로 설정할 때</span></b></span><span style="line-height: 1.5;"><br /></span></p>
+<span style="color: rgb(255, 0, 0);"></span></div><div style="font-family: Gulim;"><p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5; color: rgb(255, 0, 0);"><span style="color: rgb(0, 0, 0);">　</span><strike><b><span style="color: rgb(0, 170, 255);">L/Macro</span></b><span style="color: rgb(0, 0, 0);">&nbsp;키를 1회 누르고 아래 방법에 따라 매크로를 기록합니다.</span></strike></span><span style="line-height: 1.5;"><br /></span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5; color: rgb(255, 0, 0);"><span style="color: rgb(0, 0, 0);">　</span><strike><span style="color: rgb(0, 0, 0);">해당 방법으로 설정된 매크로는,&nbsp;</span><b><span style="color: rgb(0, 170, 255);">L/Macro</span></b><span style="color: rgb(0, 0, 0);">키와 조합하지 않아도 반복 매크로로 작동합니다.</span></strike></span><span style="line-height: 1.5;"><br /></span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5; color: rgb(255, 0, 0);"><span style="color: rgb(0, 0, 0);">　</span><b><span style="color: rgb(0, 170, 255);">L/Macro</span></b><span style="color: rgb(0, 0, 0);">&nbsp;키를 눌러 반복매크로 상태를 변경할 수 있습니다.&nbsp;</span></span><span style="color: rgb(255, 0, 0); line-height: 1.5;">[2014.09.30 변경]</span><span style="line-height: 1.5;"><br /></span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5; color: rgb(255, 0, 0);"><span style="color: rgb(0, 0, 0);">　</span></span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5; color: rgb(255, 0, 0);"><span style="color: rgb(0, 0, 0);">　※ 입력 상태의 어느 시점에서든 변경 가능하며,</span></span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5; color: rgb(255, 0, 0);"><span style="color: rgb(0, 0, 0);">　</span></span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5; color: rgb(255, 0, 0);"><span style="color: rgb(0, 0, 0);">　</span></span>　<span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">반복매크로 적용시 인디케이터 LED가 2회 점멸, 해제시 1회 점멸합니다.</span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5; color: rgb(255, 0, 0);"><span style="color: rgb(0, 0, 0);">　</span><span style="color: rgb(0, 0, 0);">해당 방법으로 설정된 매크로는,&nbsp;</span><b><span style="color: rgb(0, 170, 255);">L/Macro</span></b><span style="color: rgb(0, 0, 0);">키와 조합하지 않아도 반복 매크로로 작동합니다.</span></span><span style="line-height: 1.5;"><br /></span></p>
+<div><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　일반적으로 사용 가능한 키 또는 키 조합을 입력합니다. - 컴퓨터에 그대로 입력됩니다.</span><br /></div></div><p style="font-family: Gulim;"><span style="color: rgb(255, 0, 0);"></span></p>
+<div style="font-family: Gulim;"><p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　입력하는 도중 잠시 딜레이를 주고자 할때,</span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">딜레이 키(</span><b style="line-height: 1.5; color: rgb(0, 170, 255);">20ms ~ 1sec</b><span style="line-height: 1.5;">)를 누르면 해당 시간만큼 지연할 수 있습니다.</span></p>
+<p>　　<span style="line-height: 1.5;">　　</span><span style="line-height: 1.5;">　　※ 딜레이 키는 원하는 만큼 입력 가능합니다. (총 입력에 계산됨)</span><span style="line-height: 1.5;"><br /></span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">일반 문자는 1입력,&nbsp;<b><span style="color: rgb(0, 170, 255);">Alt, Ctrl, Shift, Gui</span></b>&nbsp;키는 누름/해제 2입력으로 인식하며,</span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　최대 50 입력까지 저장, 입력된 수가 50이 되면 자동으로 저장됩니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　입력 상태에 들어가면 취소가 불가능합니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　2-4.&nbsp;<span style="color: rgb(0, 170, 255);"><b>C/M</b></span>&nbsp;키를 눌러 저장된 내용을 저장 &gt; 인디케이터 LED 2회 점멸</span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　2-5. 컨트롤 모드 종료</span><span style="line-height: 1.5;">(</span><b style="line-height: 1.5;"><span style="color: rgb(0, 170, 255);">ESC</span></b><span style="line-height: 1.5;">)</span><span style="line-height: 1.5;">&nbsp;또는 다른 설정 변경</span></p>
+<p><br /></p>
+<a name="menu4-3"></a>
+<p><b><span style="font-size: 14px;">3. 매크로 사용</span></b></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　정적 하드웨어 매크로(<span style="color: rgb(0, 170, 255);"><b>SM01~SM2</b></span>0), 하드웨어 매크로(<b><span style="color: rgb(0, 170, 255);">DM01~DM15</span></b>),</span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　위</span><span style="line-height: 1.5;">의 키가 눌리면, 해당 매크로에 기록된 내용이 입력됩니다.</span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">반복 매크로의 경우, 1회 누를시 일반 매크로와 동일하게 작동하며</span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">(키 누름 해제보다 매크로 입력 시간이 짧을경우 여러번 입력됨),</span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　누름 상태 유지시, 기록된 내용이 반복적으로 입력됩니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　반복 매크로 사용 중 사용자의 키 입력이 가능하며, 사용자 키 입력이 우선 처리됩니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　※ 반복 매크로 키가 눌려있고, 6+1의 모든 키를 사용자가 누름 상태로 유지하면 반복 매크로가 일시 정지되며,</span><span style="line-height: 1.5;"><br /></span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">사용자의 키 누름 해제시 다시 작동합니다.</span></p>
+<p><br /></p>
+<a name="menu4-4"></a>
+<p><b><span style="font-size: 14px;">4. 매크로 초기화 (Clear Macro)</span></b></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　※ 하드웨어 매크로(<b><span style="color: rgb(0, 170, 255);">HM01~HM15, L/Macro</span></b>)만 초기화됩니다.</span><br /></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　4-1.&nbsp;</span><b style="line-height: 1.5;"><span style="color: rgb(0, 170, 255);">C/M</span></b><span style="line-height: 1.5;">&nbsp;</span><span style="line-height: 1.5;">키를 눌러 컨트롤 모드 진입</span><br /></p>
+<p>　<span style="line-height: 1.5;">　4-2.<span style="color: rgb(0, 158, 37);"><b>&nbsp;</b></span></span><span style="line-height: 1.5;"><b><span style="color: rgb(0, 158, 37);"><span style="color: rgb(0, 170, 255);">C</span><span style="color: rgb(0, 0, 0);">,</span><span style="color: rgb(0, 170, 255);">&nbsp;M</span></span></b></span><b>,</b><span style="line-height: 1.5;"><b><span style="color: rgb(0, 170, 255);">&nbsp;Enter</span></b></span><span style="line-height: 1.5;">&nbsp;입력</span><span style="line-height: 1.5;">&nbsp;</span><span style="line-height: 1.5;">&gt; 매크로 초기화 후 인디케이터 LED 2회 점멸</span><span style="line-height: 1.5;"><br /></span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　4-3. 컨트롤 모드 종료</span><span style="line-height: 1.5;">(</span><b style="line-height: 1.5;"><span style="color: rgb(0, 170, 255);">ESC</span></b><span style="line-height: 1.5;">)</span><span style="line-height: 1.5;">&nbsp;또는 다른 설정 변경</span></p>
+<div><br /></div>
+<a name="menu4-5"></a>
+<p><b><span style="font-size: 14px;">5. 매크로 딜레이 설정 (Macro Delay)</span></b></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　※ 하드웨어 매크로의, 입력될 키 사이의 딜레이를 설정합니다.</span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　DM01~DM15의 기본 딜레이로 적용됩니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　5-1.&nbsp;</span><b style="line-height: 1.5;"><span style="color: rgb(0, 170, 255);">C/M</span></b><span style="line-height: 1.5;">&nbsp;</span><span style="line-height: 1.5;">키를 눌러 컨트롤 모드 진입</span><br /></p>
+<p>　<span style="line-height: 1.5;">　5-2.&nbsp;</span><span style="line-height: 1.5;"><b><span style="color: rgb(0, 158, 37);"><span style="color: rgb(0, 170, 255);">M</span><span style="color: rgb(0, 0, 0);">,</span><span style="color: rgb(0, 170, 255);">&nbsp;D</span></span></b></span><b>,</b><span style="line-height: 1.5;"><b><span style="color: rgb(0, 170, 255);">&nbsp;Enter</span></b></span><span style="line-height: 1.5;">&nbsp;입력</span></p>
+<p>　<span style="line-height: 1.5;">　5-3. 설정할 딜레이 값 입력 - 문자열 위의 숫자만 인식, 0~250(<b>×10ms</b>)까지 설정 가능</span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　5-4.&nbsp;</span><b style="line-height: 1.5;"><span style="color: rgb(0, 170, 255);">C/M</span></b><span style="line-height: 1.5;">&nbsp;</span><span style="line-height: 1.5;">키를 눌러&nbsp;저장</span><span style="line-height: 1.5;"><br /></span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　5-5.&nbsp;</span><span style="line-height: 1.5;">인디케이터 LED 2회 점멸 후 컨트롤 모드로 복귀</span><span style="line-height: 1.5;"><br /></span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　5-6. 컨트롤 모드 종료</span><span style="line-height: 1.5;">(</span><b style="line-height: 1.5;"><span style="color: rgb(0, 170, 255);">ESC</span></b><span style="line-height: 1.5;">)</span><span style="line-height: 1.5;">&nbsp;또는 다른 설정 변경</span></p>
+<div><span style="line-height: 1.5;"><br /></span></div><p><br /></p>
+<a name="menu5"></a>
+<table cellspacing="2" width="600" style="border-spacing: 1px; background: rgb(58, 50, 195);"><tbody><tr style="background: rgb(106, 101, 187);"><td><p>&nbsp;<b style="line-height: 1.5;"><span style="font-size: 16px; color: rgb(255, 255, 255);">5. 키 잠금(Key Lock) 기능</span></b></p>
+</td></tr></tbody></table><p><br /></p>
+<p>특정 위치의 키 눌림을 잠그는 기능입니다.</p>
+<p>펑션키(<b><span style="color: rgb(0, 170, 255);">FN1~FN3, MFN</span></b>) 및 펑션키 조합 입력은 잠금 상태와 상관없이 작동합니다.</p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　잠금 키 위치만 저장되며, 키 잠금 상태는 저장되지 않습니다.</span><br /></p>
+<p><br /></p>
+<a name="menu5-1"></a>
+<p><b><span style="font-size: 14px;">1. 잠글 키 설정</span></b></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　1-1.&nbsp;</span><b style="line-height: 1.5;"><span style="color: rgb(0, 170, 255);">C/M</span></b><span style="line-height: 1.5;">&nbsp;</span><span style="line-height: 1.5;">키를 눌러 컨트롤 모드 진입</span><br /></p>
+<p>　<span style="line-height: 1.5;">　1-2.&nbsp;</span><span style="line-height: 1.5;"><b><span style="color: rgb(0, 158, 37);"><span style="color: rgb(0, 170, 255);">K</span><span style="color: rgb(0, 0, 0);">,</span><span style="color: rgb(0, 170, 255);">&nbsp;L</span></span></b></span><b>,</b><span style="line-height: 1.5;"><b><span style="color: rgb(0, 170, 255);">&nbsp;Enter</span></b></span><span style="line-height: 1.5;">&nbsp;입력</span><span style="line-height: 1.5;">&nbsp;</span><span style="line-height: 1.5;">&gt; 인디케이터 LED 2회 점멸</span></p>
+<p>　<span style="line-height: 1.5;">　1-3. 잠글 위치의 키를 누름</span></p>
+<p>　<span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　잠글 위치를 초기화 후 설정하는 방식으로, 기존 설정과 관계없이 잠그고자 하는 위치를 모두 눌러야 합니다.</span></p>
+<p>　<span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　키가 눌릴때마다 LED가 1회씩 점멸합니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　1-4.&nbsp;</span><b style="line-height: 1.5;"><span style="color: rgb(0, 170, 255);">C/M</span></b><span style="line-height: 1.5;">&nbsp;</span><span style="line-height: 1.5;">키를 눌러&nbsp;저장</span><span style="line-height: 1.5;"><br /></span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　1-5.&nbsp;</span><span style="line-height: 1.5;">인디케이터 LED 2회 점멸 후 컨트롤 모드로 복귀</span><span style="line-height: 1.5;"><br /></span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　1-6. 컨트롤 모드 종료</span><span style="line-height: 1.5;">(</span><b style="line-height: 1.5;"><span style="color: rgb(0, 170, 255);">ESC</span></b><span style="line-height: 1.5;">)</span><span style="line-height: 1.5;">&nbsp;또는 다른 설정 변경</span></p>
+<div><span style="line-height: 1.5;"><br /></span></div>
+<a name="menu5-2"></a>
+<p><span style="font-size: 14px;"><b>2. 키 잠금 상태 적용/해제</b></span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　<b><span style="color: rgb(0, 170, 255);">Key Lock</span></b>&nbsp;키가 눌리면 잠금/해제 설정이 변경됩니다.</span><br /></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　인디케이터 LED가 3회 깜박이면 잠금 상태, 1회 깜박이면 해제된 상태입니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p><span style="line-height: 1.5;"><br /></span></p>
+<a name="menu5-3"></a>
+<p><span style="font-size: 14px;"><b>3. 잠금 키 초기화</b></span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　<span style="color: rgb(0, 158, 37);">'1. 잠금 키 설정'</span>의&nbsp;<span style="color: rgb(0, 158, 37);">1-3 항목</span>만 건너뛰면 초기화 상태로 설정됩니다.</span><br /></p>
+<p><span style="line-height: 1.5;"><br /></span></p>
+<a name="menu5-4"></a>
+<p><span style="font-size: 14px;"><b>4. 키보드 잠금 기능으로 활용</b></span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;"><span style="color: rgb(0, 158, 37);">'1. 잠금 키 설정'</span>의&nbsp;<span style="color: rgb(0, 158, 37);">1-3 항목</span>에서, 모든 키를 눌러 잠금 상태를 설정하면,</span><br /></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　키보드 입력 잠금 기능으로 활용 가능합니다.</span></p>
+<p><span style="line-height: 1.5;"><br /></span></p>
+<p><br /></p>
+<a name="menu6"></a>
+<table cellspacing="2" width="600" style="border-spacing: 1px; background: rgb(58, 50, 195);"><tbody><tr style="background: rgb(106, 101, 187);"><td><p>&nbsp;<b style="line-height: 1.5;"><span style="font-size: 16px; color: rgb(255, 255, 255);">6. 핫 키(HotKey) 설정 및 사용</span></b></p>
+</td></tr></tbody></table><p><br /></p>
+<p>단축키 또는 사용자 키맵으로 사용 가능한 핫키 기능 설명입니다.</p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　핫키 설정 정보만 저장되며, 사용 상태는 저장되지 않습니다.</span><br /></p>
+<p><br /></p>
+<a name="menu6-1"></a>
+<p><span style="line-height: 1.5; font-size: 14px;"><b>1. 핫키 설명</b></span><br /></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span>※<span style="line-height: 1.5;">&nbsp;</span><span style="color: rgb(0, 158, 37);">Alt, Ctrl, Shift, Gui</span>&nbsp;조합의 단축키(또는 핫키)를 원하는 위치에 설정할 수 있는 기능입니다.</p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">Shorcut-S, 포토샵 키보드 등의 기능 구현 가능.</span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　예)&nbsp;</span><span style="line-height: 1.5;"><span style="color: rgb(0, 158, 37);">Alt+Ctrl+Delete</span>&nbsp;를&nbsp;</span><span style="line-height: 1.5;">원하는 위치에 설정 가능</span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span>※<span style="line-height: 1.5;">&nbsp;</span><span style="line-height: 1.5;">조합 키(</span><span style="line-height: 1.5;"><span style="color: rgb(0, 158, 37);">Alt, Ctrl, Shift, Gui</span>)</span><span style="line-height: 1.5;">&nbsp;없이 실행 키(<span style="color: rgb(0, 158, 37);">A, B, C, D</span>&nbsp;등)만 단독으로 설정할 수 있으며,</span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">매크로 키(<span style="color: rgb(0, 170, 255);"><b>SM01~SM20, DM01~DM15</b></span>) 또한 원하는 위치에 설정이 가능합니다.</span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span>※<span style="line-height: 1.5;">&nbsp;</span><span style="line-height: 1.5;">매핑 프로그램 없이 설정 가능하며, 사용자 레이어로 활용할 수 있습니다.</span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span>※<span style="line-height: 1.5;">&nbsp;키 누름 상태 유지가 가능합니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span>※<span style="line-height: 1.5;">&nbsp;</span><span style="line-height: 1.5;">펑션 키(<b><span style="color: rgb(0, 170, 255);">FN1~FN3, MFN</span></b>)를 제외한 위치에 자유롭게 설정 가능합니다.</span><br /></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　현재 설정된 사용자 레이어(<span style="color: rgb(0, 170, 255);"><b>Ly1 ~ Ly4</b></span>)를 바탕으로, 설정한 키를 덮어씌우는 방식으로,</span><span style="line-height: 1.5;"><br /></span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">펑션 키<span style="color: rgb(255, 0, 0);">＊</span>의 위치는 사용할 수 없습니다.</span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="color: rgb(255, 0, 0);">＊</span><span style="line-height: 1.5; color: rgb(255, 0, 0);">&nbsp;현재 설정된 사용자 레이어에 있는 펑션 키</span><span style="line-height: 1.5;"><br /></span></p>
+<p><br /></p>
+<a name="menu6-2"></a>
+<p><span style="font-size: 14px;"><b>2. 핫키 설정</b></span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　2-1.&nbsp;</span><b style="line-height: 1.5;"><span style="color: rgb(0, 170, 255);">C/M</span></b><span style="line-height: 1.5;">&nbsp;</span><span style="line-height: 1.5;">키를 눌러 컨트롤 모드 진입</span><br /></p>
+<p>　<span style="line-height: 1.5;">　2-2.&nbsp;</span><span style="line-height: 1.5;"><b><span style="color: rgb(0, 158, 37);"><span style="color: rgb(0, 170, 255);">H</span><span style="color: rgb(0, 0, 0);">,</span><span style="color: rgb(0, 170, 255);">&nbsp;K</span></span></b></span><b>,</b><span style="line-height: 1.5;"><b><span style="color: rgb(0, 170, 255);">&nbsp;Enter</span></b></span><span style="line-height: 1.5;">&nbsp;입력</span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="color: rgb(255, 0, 0);">→&nbsp;</span><span style="line-height: 1.5; color: rgb(255, 0, 0);">ESC키를 눌러 취소 가능한 구간 - 시작</span><span style="line-height: 1.5;"><br /></span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">2-3.&nbsp;</span><span style="line-height: 1.5;">인디케이터 LED 1회 점멸 후 꺼짐</span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　2-4. 핫키를 설정할 위치의 키를 누름</span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　<span style="color: rgb(0, 170, 255);"><b>ESC</b></span>&nbsp;위치에 설정시,&nbsp;<span style="color: rgb(0, 158, 37);"><b>FN키</b></span>&nbsp;조합이나 레이어 변경등으로&nbsp;<span style="color: rgb(0, 170, 255);"><b>ESC</b></span>가 아닌 다른키를 눌러 설정 가능</span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　2-5.&nbsp;</span><span style="line-height: 1.5;">인디케이터 LED 1회 점멸 후 켜짐</span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　2-6. 설정할 단축키 또는 일반키, 매크로 키를 누름</span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　<b><span style="color: rgb(0, 170, 255);">Alt, Ctrl, Shift, Gui</span></b>의 조합 키를 먼저 눌러야 하며,</span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">(누르고 있지 않아도 되며, 중복하여 입력해도 해제되지 않음)</span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　일반키 또는 매크로 키를 누르면, 설정 적용 후 2-3 단계로 넘어가 추가로 설정 가능</span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5; color: rgb(255, 0, 0);">→&nbsp;</span><span style="line-height: 1.5; color: rgb(255, 0, 0);">ESC 키를 눌러 취소 가능한 구간 - 끝</span><br /></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　2-7.&nbsp;</span><b style="line-height: 1.5;"><span style="color: rgb(0, 170, 255);">C/M</span></b><span style="line-height: 1.5;">&nbsp;</span><span style="line-height: 1.5;">키를 눌러&nbsp;저장</span><br /></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　2-8.&nbsp;</span><span style="line-height: 1.5;">인디케이터 LED 2회 점멸 후 컨트롤 모드로 복귀</span><span style="line-height: 1.5;"><br /></span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　2-9. 컨트롤 모드 종료</span><span style="line-height: 1.5;">(</span><b style="line-height: 1.5;"><span style="color: rgb(0, 170, 255);">ESC</span></b><span style="line-height: 1.5;">)</span><span style="line-height: 1.5;">&nbsp;또는 다른 설정 변경</span></p>
+<div><span style="line-height: 1.5;"><br /></span></div>
+<a name="menu6-3"></a>
+<p><span style="font-size: 14px;"><b>3. 핫키 사용</b></span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span>※<span style="line-height: 1.5;">&nbsp;</span><span style="line-height: 1.5;"><b><span style="color: rgb(0, 170, 255);">Hotkey</span></b>&nbsp;키가 눌리면 사용/해제 상태가 토글되며,</span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">3회 점멸시 사용 상태, 1회 점멸시 해제 상태입니다.</span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span>※&nbsp;핫키가 설정된 위치를 키를 누르면, 설정된 키가 입력됩니다.<span style="line-height: 1.5;"><br /></span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　키를 누르고 있는 상태 유지 가능 합니다.</span><br /></p>
+<p><span style="line-height: 1.5;"><br /></span></p>
+<a name="menu6-4"></a>
+<p><span style="font-size: 14px;"><b>4. 잠금 상태 설정</b></span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　핫키가 설정되지 않은 위치의 입력을 차단하는 기능입니다.<span class="Apple-tab-span">	</span></span><br /></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　4-1.&nbsp;</span><b style="line-height: 1.5;"><span style="color: rgb(0, 170, 255);">C/M</span></b><span style="line-height: 1.5;">&nbsp;</span><span style="line-height: 1.5;">키를 눌러 컨트롤 모드 진입</span><br /></p>
+<p>　<span style="line-height: 1.5;">　4-2.&nbsp;</span><span style="line-height: 1.5;"><b><span style="color: rgb(0, 158, 37);"><span style="color: rgb(0, 170, 255);">Hotkey</span><span style="color: rgb(0, 0, 0);">,</span><span style="color: rgb(0, 170, 255);">&nbsp;</span></span></b></span><span style="line-height: 1.5;"><b><span style="color: rgb(0, 170, 255);">Enter</span></b></span><span style="line-height: 1.5;">&nbsp;입력</span></p>
+<p>　<span style="line-height: 1.5;">　4-3. 인디케이터 LED가 1회 점멸시 해제, 2회 점멸시 설정 상태</span><span style="line-height: 1.5;"><br /></span></p>
+<div><p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　4-4.&nbsp;</span><span style="line-height: 1.5;">상태 변경 후 자동 저장, 컨트롤 모드로 복귀</span><br /></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　4-5. 컨트롤 모드 종료</span><span style="line-height: 1.5;">(</span><b style="line-height: 1.5;"><span style="color: rgb(0, 170, 255);">ESC</span></b><span style="line-height: 1.5;">)</span><span style="line-height: 1.5;">&nbsp;또는 다른 설정 변경</span></p>
+</div><div><span style="line-height: 1.5;"><br /></span></div>
+<a name="menu6-5"></a>
+<div><span style="line-height: 1.5; font-size: 14px;"><b>5. 핫키 초기화</b></span></div><div><p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　설정된 핫키 전체를 초기화하는 방법입니다.</span><br /></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　5-1.&nbsp;</span><b style="line-height: 1.5;"><span style="color: rgb(0, 170, 255);">C/M</span></b><span style="line-height: 1.5;">&nbsp;</span><span style="line-height: 1.5;">키를 눌러 컨트롤 모드 진입</span><br /></p>
+<p>　<span style="line-height: 1.5;">　5-2.&nbsp;</span><span style="line-height: 1.5;"><b><span style="color: rgb(0, 158, 37);"><span style="color: rgb(0, 170, 255);">C</span><span style="color: rgb(0, 0, 0);">,</span><span style="color: rgb(0, 170, 255);">&nbsp;H</span></span></b></span><b>,</b><span style="line-height: 1.5;"><b><span style="color: rgb(0, 170, 255);">&nbsp;Enter</span></b></span><span style="line-height: 1.5;">&nbsp;입력</span></p>
+<p>　<span style="line-height: 1.5;">　5-3. 핫키 초기화 후 인디케이터 LED가 2회 점멸</span><span style="line-height: 1.5;"><br /></span></p>
+<div><p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　5-4. 초기화 상태 저장 후&nbsp;</span><span style="line-height: 1.5;">컨트롤 모드로 자동 복귀</span><br /></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　5-5. 컨트롤 모드 종료</span><span style="line-height: 1.5;">(</span><b style="line-height: 1.5;"><span style="color: rgb(0, 170, 255);">ESC</span></b><span style="line-height: 1.5;">)</span><span style="line-height: 1.5;">&nbsp;또는 다른 설정 변경</span></p>
+</div></div><div><span style="line-height: 1.5;"><br /></span></div>
+<a name="menu6-6"></a>
+<p><span style="font-size: 14px;"><b>6. 키보드 잠금 기능으로 활용</b></span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　'</span><span style="line-height: 1.5;">4. 잠금 상태 설정', '</span><span style="line-height: 1.5;">5. 핫키 초기화' 두가지 설정 후&nbsp;</span><span style="line-height: 1.5;">핫키 사용 설정시,</span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">FN키 조합의 입력만 가능합니다.</span></p>
+<p>　<span style="line-height: 1.5;">　</span><br /></p>
+<p><br /></p>
+<a name="menu7"></a>
+<table cellspacing="2" width="600" style="border-spacing: 1px; background: rgb(58, 50, 195);"><tbody><tr style="background: rgb(106, 101, 187);"><td><p>&nbsp;<b style="line-height: 1.5;"><span style="font-size: 16px; color: rgb(255, 255, 255);">7. 임시 레이어(Temporarily Layer) 설정 및 사용</span></b></p>
+</td></tr></tbody></table><p><br /></p>
+<p>임시 레이어에 설정된 키가 눌리는 동안에만 유지되는 사용자 레이어입니다.</p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">현재 사용자가 설정한 레이어를 기준으로, 덮어씌워지는 방식으로 작동합니다.</span><br /></p>
+<p><span style="line-height: 1.5;"><br /></span></p>
+<p><span style="line-height: 1.5;">설정되지 않은 키(빈 키)가 눌리면 즉시 해제되며, 해당 위치의 키(사용자 레이어의 키)가 입력됩니다.</span></p>
+<p><span style="line-height: 1.5;"><br /></span></p>
+<a name="menu7-1"></a>
+<p><span style="line-height: 1.5; font-size: 14px;"><b>1. 임시 레이어 키 매핑</b></span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　키 매핑 프로그램에서 설정이 가능하며, 사용하고자 하는 키만 설정합니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p><br /></p>
+<a name="menu7-2"></a>
+<p><span style="line-height: 1.5; font-size: 14px;"><b>2. 임시 레이어 적용 및 해제</b></span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　<b><span style="color: rgb(0, 170, 255);">T/L</span></b>&nbsp;키를 눌러 적용/해제 할 수 있습니다.</span><span style="line-height: 1.5; font-size: 14px;"><b><br /></b></span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　사용중인 사용자 레이어의 펑션키 위치에는 적용할 수 없으며, 펑션키가 눌리면 즉시 해제됩니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p><span style="line-height: 1.5;"><br /></span></p>
+<a name="menu7-3"></a>
+<p><b style="font-size: 14px; line-height: 21px;">3. 임시 레이어 사용 예</b><span style="line-height: 1.5;"><br /></span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　아래는 라이트세이버에 적용/설정한 키 매핑입니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　1. 일반적으로 사용자 레이어의 상태로 사용합니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　2. 숫자 키를 누를 상황이 발생합니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　3. 키 패드 엔터 자리에 위치한&nbsp;<b><span style="color: rgb(0, 170, 255);">T/L</span></b>&nbsp;키를 눌러 임시 레이어를 활성화 합니다.</span><br /></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　4. 임시 레이어에 적용된 숫자 키가 설정되었으므로, 사용합니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　5-1. 일반적인 키 입력이 필요한 상황이 돌아오면, 일반적인 키(임시 레이어에 설정되지 않은 키)를 눌러줍니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">사용자가 입력한 키가 입력되고, 임시 레이어는 자동으로 해제됩니다.</span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　5-2. 키 패드 위치의 편집 키를 누를 상황이 돌아오면,&nbsp;<span style="color: rgb(0, 158, 37);"><b>ESC</b></span>&nbsp;위치의&nbsp;<span style="color: rgb(0, 170, 255);"><b>T/L</b></span>&nbsp;키를 눌러줍니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　임시 레이어 기능만 해제되어, 편집키를 입력할 수 있게됩니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p><span style="line-height: 1.5;"><br /></span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　[사용자 레이어]</span><span style="line-height: 1.5;"><br /></span></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　&nbsp;<img src="http://kbdlab.co.kr/files/attach/images/270/961/386/178c4a061e5bcccf388770c34f47860b.jpg" alt="layer_normal.jpg" width="624" height="195" editor_component="image_link" /></span><br /></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　[임시 레이어]</span><br /></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span>&nbsp;<img src="http://kbdlab.co.kr/files/attach/images/270/961/386/3df5969fa017ad15519ccb21679a8b16.jpg" alt="layer_temp.jpg" width="624" height="193" editor_component="image_link" /><br /></p>
+<p><br /></p>
+<p><br /></p>
+<p><br /></p>
+<a name="menu8"></a>
+<table cellspacing="2" width="600" style="border-spacing: 1px; background: rgb(58, 50, 195);"><tbody><tr style="background: rgb(106, 101, 187);"><td><p>&nbsp;<b style="line-height: 1.5;"><span style="font-size: 16px; color: rgb(255, 255, 255);">8. 키보드에 설정된 키 매핑 및 매크로 정보 가져오기</span></b></p>
+</td></tr></tbody></table><p><br /></p>
+<p>키보드에 설정된 키 매핑 정보, 매크로 정보를 추출(또는 확인)하는 방법입니다.</p>
+<p><br /></p>
+<p>기존에 설정한 펌웨어 파일이 없거나, 키보드에 설정된 키 매핑 또는 정적 하드웨어 매크로(<span style="color: rgb(0, 170, 255);"><b>SM01~SM20</b></span>) 정보를 확인</p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span>또는 설정된 키 매핑, 매크로를 변경하고자 할 때 사용하시면 됩니다.</p>
+<p>펌웨어 버전 업그레이드시 사용하시면 좋습니다.</p>
+<p><br /></p>
+<a name="menu8-1"></a>
+<p><span style="font-size: 14px;"><b>1. 키 매핑 프로그램 설정</b></span></p>
+<p>　<span style="line-height: 1.5;">　1-1.&nbsp;<span style="color: rgb(0, 158, 37);">File &gt; New</span>&nbsp;메뉴에서 사용하는 기판에 해당하는 펌웨어를 선택합니다.</span><br /></p>
+<p>　<span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　<span style="color: rgb(255, 0, 0);">02D Custom Firmware</span>&nbsp;만 적용 가능합니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p>　<span style="line-height: 1.5;">　1-2.&nbsp;<span style="color: rgb(0, 158, 37);">File &gt; Restore - Keymap and Macro</span>&nbsp;메뉴를 선택합니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p>　<span style="line-height: 1.5;">　1-3.&nbsp;</span><b>Restore - Keymap and Macro&nbsp;</b><span style="line-height: 1.5;">창이 뜨는지 확인합니다.</span><span style="line-height: 1.5;"><br /></span></p>
+<p><span style="line-height: 1.5;"><br /></span></p>
+<a name="menu8-2"></a>
+<p><span style="font-size: 14px;"><b>2. 키 매핑 및 매크로 정보 추출</b></span></p>
+<div><p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　2-1.&nbsp;</span><b style="line-height: 1.5;"><span style="color: rgb(0, 170, 255);">C/M</span></b><span style="line-height: 1.5;">&nbsp;</span><span style="line-height: 1.5;">키를 눌러 컨트롤 모드 진입</span><br /></p>
+<p>　<span style="line-height: 1.5;">　2-2.&nbsp;</span><span style="line-height: 1.5;"><b><span style="color: rgb(0, 158, 37);"><span style="color: rgb(0, 170, 255);">B</span><span style="color: rgb(0, 0, 0);">,</span><span style="color: rgb(0, 170, 255);">&nbsp;</span></span></b></span><span style="line-height: 1.5;"><b><span style="color: rgb(0, 158, 37);"><span style="color: rgb(0, 170, 255);">A</span></span></b></span><b>,</b><span style="line-height: 1.5;"><b><span style="color: rgb(0, 170, 255);">&nbsp;</span></b></span><span style="line-height: 1.5;"><b><span style="color: rgb(0, 158, 37);"><span style="color: rgb(0, 170, 255);">K</span></span></b></span><b style="line-height: 1.5;">,</b><span style="line-height: 1.5;"><b><span style="color: rgb(0, 170, 255);">&nbsp;</span></b></span><span style="line-height: 1.5;"><b><span style="color: rgb(0, 170, 255);">Enter</span></b></span><span style="line-height: 1.5;">&nbsp;입력</span></p>
+<p>　<span style="line-height: 1.5;">　2-3. 약 30초 이내에 정보를 출력 - 키 입력 차단됨</span></p>
+<div><p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　2-4. 데이터 추출 후 일반&nbsp;</span><span style="line-height: 1.5;">키보드 모드로 자동 복귀</span><br /></p>
+<p><span style="line-height: 1.5;">　</span><span style="line-height: 1.5;">　</span>→&nbsp;입력이 완료되면&nbsp;<span style="color: rgb(0, 158, 37);">'키 매핑 프로그램'</span>의&nbsp;<span style="color: rgb(0, 158, 37);">'Apply' 버튼</span>을 눌러 적용하시면 됩니다.</p>
+</div></div></div>
+</div>
+
+
+
+
+</div>
