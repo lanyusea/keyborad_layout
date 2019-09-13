@@ -18,11 +18,11 @@ effect_speed=3 ^
 color_1=180,100,100 ^
 color_2=216,100,100 ^
 caps_lock_indicator_color=0,100,100 ^
-caps_lock_indicator_row_col=all ^
+caps_lock_indicator_row_col=none ^
 layer_1_indicator_color=30,100,100 ^
-layer_1_indicator_row_col=all ^
+layer_1_indicator_row_col=none ^
 layer_2_indicator_color=30,100,100 ^
-layer_2_indicator_row_col=all ^
+layer_2_indicator_row_col=none ^
 layer_3_indicator_color=30,100,100 ^
 layer_3_indicator_row_col=none
 
